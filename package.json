@@ -1,0 +1,35 @@
+{
+  "name": "chatapp",
+  "version": "1.0.0",
+  "description": "A ChatApp Development",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest --watchAll --verbose --runInBand"
+  },
+  "author": "Tanuja Nadaf",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.10",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.5.6",
+    "nodemon": "^1.19.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "username":"TanujaNadaf",
+    "url": "git+https://github.com/TanujaNadaf/Tanuja-ChatApp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TanujaNadaf/Tanuja-ChatApp/issues"
+  },
+  "homepage": "https://github.com/TanujaNadaf/Tanuja-ChatApp#readme"
+}

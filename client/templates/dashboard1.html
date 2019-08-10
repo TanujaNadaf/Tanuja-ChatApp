@@ -1,0 +1,116 @@
+<style>
+  * {
+    box-sizing: border-box
+  }
+
+  body {
+    font-family: "Lato", sans-serif;
+  }
+
+  /* Style the tab */
+
+  .tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    width: 30%;
+    height: 380px;
+  }
+
+  /* Style the buttons inside the tab */
+  .tab button {
+    display: block;
+    background-color: inherit;
+    color: white;
+    font-weight: bold;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  /* Create an active/current "tab button" class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+
+  /* Style the tab content */
+  .tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 30%;
+    border-left: none;
+    height: 380px;
+    color: white;
+  }
+
+  .bottom {
+    bottom: 0px;
+    position:fixed
+  }
+
+  .floatLeft {
+    width: 80%;
+    background-color: lightblue;
+    margin-top: 5px;
+  }
+
+  .floatRigth {
+    width: 80%;
+    background-color: lightblue;
+    margin-top: 5px;
+    text-align: right;
+    float: right;
+  }
+
+  h1 {
+    margin: 0;
+    padding: 20px;
+    font-size: 20px;
+    font-family: "calibri";
+    text-align: left;
+    color: white;
+  }
+</style>
+
+<h1>A Simple ChatApp</h1>
+<div class="tab">
+  <!---div ng-submit="openContacts()"></div>-->
+  <button ng-click="openContacts('Ashwini')">Ashwini</button>
+  <button ng-click="openContacts('Swati')">Swati</button>
+  <button ng-click="openContacts('Naveeda')">Naveeda</button>
+  <button ng-click="openContacts('Pallavi')">Pallavi</button>
+  <button ng-click="openContacts('Prachi')">Prachi</button>
+  <button ng-click="openContacts('Kaveri')">Kaveri</button>
+
+</div>
+
+<div>
+  <div class="tabcontent">
+
+    <h3>{{ReciverName}}</h3>
+    
+
+
+    <div class="floatLeft" ng-repeat="result in array">{{result}}</div>
+      <!---div class="floatRigth">hello 2</div>
+      <div class="floatLeft">hello 3 </div>
+      <div class="floatRigth">hello 4</div> 
+      <div class="floatLeft">how u?</div>-->
+
+    <div class="bottom" >
+      <input type="text" style="color:black" ng-model="user.message">
+      <button type="submit" ng-click="submit()">Send</button>
+  </div>
+
+</div>

@@ -1,0 +1,122 @@
+
+body, html{
+    background-image: url("../assets/image2.jpg");
+    height: 100%;
+    width: 100%;
+    margin:0;
+    padding:0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.loginbox{
+    width:318px;
+    height:410px;
+    background:rgba(0,0,0,0.5);
+    color:#fff;
+    top:50%;
+    left:47%;
+    position:absolute;
+    transform:translate(-50%,-50%);
+    box-sizing:border-box;
+    padding:40px 30px;
+}
+.avtar{
+    /*padding-bottom: 50px;*/
+    width:85px;
+    height:85px;
+    border-radius:50%;
+    position:absolute;
+    top:-45px;
+    left:calc(52% - 46px);
+}
+h1{
+   margin:0;
+   padding:10px;
+   text-align:center;
+   font-size:22px;
+   font-family: "calibri";
+}
+.loginbox p{
+    margin:0;
+    padding:0px;
+    font-size:14px;
+    font-weight:bold;
+    font-family: "calibri"
+}
+.loginbox input{
+    width:100%;
+    margin-bottom:20px;
+    font-family: "calibri"
+    
+}
+.loginbox input[type="text"],input[type="password"]
+{
+    border:none;
+    border-bottom:1px solid #fff;
+    background:transparent;
+    outline:none;
+    height:40px;
+    color:#fff;
+    font-family: "calibri";
+    font-size:15px
+}
+.loginbox input[type="email"],input[type="emailaddress"]
+{
+    border:none;
+    border-bottom:1px solid #fff;
+    background:transparent;
+    outline:none;
+    height:40px;
+    color:#fff;
+    font-family:"calibri";
+    font-size:15px;
+}
+
+.loginbox button{
+    border:none;
+    outline:none;
+    height:28px;
+    width:250px;
+    background:#1c8adb;
+    color:#fff;
+    font-size:15px;
+    border-radius:20px;
+    font-family: "calibri"
+}
+.loginbox button:hover
+{
+    cursor:pointer;
+    background:#1c8adb;
+    color:#000;
+}
+.loginbox a{
+    text-decoration:none;
+    font-size:14px;
+    font-weight:bold;
+    color:#fff;
+    font-family: "calibri";
+}
+.loginbox a:hover
+{
+    cursor:pointer;
+    color:#F0E68C;
+}
+.register
+{
+    margin:0;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:bold;
+    color:#fff;
+    font-family: "calibri";
+    padding:10px;
+    text-align:left;
+}
+.validation
+{
+    font-size:14px;
+    color:#ff0000;
+    font-family: "calibri";
+    padding-bottom:14px;
+}

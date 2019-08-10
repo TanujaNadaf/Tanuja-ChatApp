@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The ChatApp Application</title>
+    <link href="/css/login.css" rel="stylesheet" type="text/css">
+    <link href="/css/register.css" rel="stylesheet" type="text/css">
+    <link href="/css/forgotPassword.css" rel="stylesheet" type="text/css">
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+     <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+    <script type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.22/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
+    <script type="text/javascript" src="./controller/loginController.js"></script>
+    <script type="text/javascript" src="./controller/registerController.js"></script>
+    <script type="text/javascript" src="./services/userService.js"></script>
+    <!---script src="/socket.io/socket.io.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-socket-io/0.7.0/socket.min.js"></script>
+</head>
+
+<body ng-app="ChatApp">
+    <div ui-view>
+        
+    </div>
+</body>
+</html>

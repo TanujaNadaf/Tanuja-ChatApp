@@ -1,0 +1,44 @@
+
+  <div >
+    <div class="registerbox">
+      <img src="./assets/avtar.jpeg" class="avtar">
+      <h1>ChatApp </h1>
+      <form autocomplete="off" name="registerForm" novalidate ng-submit="submit()">
+        <div class="form-group"
+          ng-class="{'has-error':registerForm.firstname.$invalid && registerForm.firstname.$dirty}">
+          <p>First Name</p>
+          <input type="text" name="firstname" placeholder="Enter your fist name" ng-model="user.firstname"
+            ng-pattern="/^([A-za-z ,.'-])\w{3,10}$/" required>
+          <div class="validation" ng-show="registerForm.firstname.$error.pattern && registerForm.firstname.$dirty">Name
+            should be between 4-12 characters!</div>
+        </div>
+        <div class="form-group" ng-class="{'has-error':registerForm.lastname.$invalid && registerForm.lastname.$dirty}">
+          <p>Last Name</p>
+          <input type="text" name="lastname" placeholder="Enter your last name" ng-model="user.lastname"
+            ng-pattern="/^([A-za-z ,.'-])\w{0,10}$/" required>
+          <div class="validation" ng-show="registerForm.lastname.$dirty && registerForm.lastname.$error.pattern">
+            Lastname should be between 1-12 characters !</div>
+        </div>
+        <div class="form-group" ng-class="{'has-error':registerForm.email.$invalid && registerForm.email.$dirty}">
+          <p>Email</p>
+          <input type="email" name="email" placeholder="Enter your mail-id" ng-model="user.email"
+            ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" required>
+          <div class="validation" ng-show="registerForm.email.$error.pattern && registerForm.email.$dirty">Invalid!
+            Please Enter the valid Email</div>
+        </div>
+        <div class="form-group" ng-class="{'has-error':registerForm.password.$invalid && registerForm.password.$dirty}">
+          <p>Create Password</p>
+          <input type="password" name="password" placeholder="Enter Password" ng-model="user.password" ng-minlength="8"
+            required>
+          <div class="validation" ng-show="registerForm.password.$error.minlength">Password should have minimum 8
+            characters!</div>
+        </div>
+        <p>Confirm Password</p>
+        <input type="password" name="confirmpassword" placeholder="Enter password" ng-model="user.confirmpassword"
+          required>
+        <!--div class="validation" ng-show="registerForm.confirmpassword.$error">The passwords do not match!</div>-->
+        <!----input type="submit" name="register" value="Register">-->
+        <button type="submit" ng-enabled="registerForm.$invalid">Register</button>
+        <div class="login">Already have an account?<a ui-sref="a">Login</a></div>
+      </form>
+    </div>
